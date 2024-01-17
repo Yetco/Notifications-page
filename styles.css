@@ -1,0 +1,267 @@
+:root {
+  /* ### Primary */
+
+  --Red: hsl(1, 90%, 64%);
+  --Blue: hsl(219, 85%, 26%);
+
+  /* ### Neutral */
+
+  --White: hsl(0, 0%, 100%);
+  --Very-light-grayish-blue: hsl(210, 60%, 98%);
+  --Light-grayish-blue-1: hsl(211, 68%, 94%);
+  --Light-grayish-blue-2: hsl(205, 33%, 90%);
+  --Grayish-blue: hsl(219, 14%, 63%);
+  --Dark-grayish-blue: hsl(219, 12%, 42%);
+  --Very-dark-blue: hsl(224, 21%, 14%);
+}
+
+/*
+      1. Use a more-intuitive box-sizing model.
+    */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+          2. Remove default margin
+        */
+* {
+  margin: 0;
+  padding: 0;
+}
+/*
+          Typographic tweaks!
+          3. Add accessible line-height
+          4. Improve text rendering
+        */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+          5. Improve media defaults
+        */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+          6. Remove built-in form typography styles
+        */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+          7. Avoid text overflows
+        */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+          8. Create a root stacking context
+        */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  background-color: var(--Very-light-grayish-blue);
+  color: var(--Dark-grayish-blue);
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: var(--White);
+  max-width: 720px;
+  padding: 1.5em;
+}
+
+div {
+  padding-bottom: 1em;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.right-end {
+  margin-left: auto;
+}
+
+#gray-top {
+  align-self: center;
+}
+
+#gray-top:hover {
+  color: var(--Blue);
+  cursor: pointer;
+  font-weight: 500;
+}
+
+#blue-square {
+  background-color: var(--Blue);
+  color: white;
+  font-size: 1rem;
+  width: 30px;
+  height: 22px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.faded-time {
+  color: var(--Grayish-blue);
+}
+
+.gray-blue-background {
+  background-color: var(--Very-light-grayish-blue);
+  padding: 1em;
+  border-radius: 5px;
+  margin-bottom: 1em;
+}
+
+img {
+  width: 40px;
+  height: 40px;
+  align-self: start;
+}
+
+.bold-name {
+  font-weight: 800;
+  color: var(--Very-dark-blue);
+  margin-right: 0.2em;
+}
+
+#gray-blue {
+  color: var(--Very-dark-blue);
+  font-weight: 500;
+}
+
+#gray-blue:hover {
+  color: var(--Blue);
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.angela-name:hover {
+  color: var(--Blue);
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.jacob-chess {
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.red-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: var(--Red);
+  color: var(--Red);
+  border-radius: 50%;
+  margin-left: 0.3em;
+}
+
+.border {
+  border: 1px solid var(--Light-grayish-blue-2);
+  margin-top: 1em;
+  padding: 1em 2.7em 1em 1em;
+}
+
+.push-image-right {
+  margin-left: 1em;
+}
+
+.push-image-right p {
+  margin-left: -1em;
+}
+
+.rizky-blue-background:hover {
+  background-color: var(--Light-grayish-blue-1);
+  cursor: pointer;
+}
+
+.kimberly-info {
+  padding-right: 1em;
+}
+
+#chess-image {
+  margin-right: 1em;
+}
+
+.nathan-info {
+  padding-right: 2em;
+}
+
+#nathan-gray {
+  color: var(--Dark-grayish-blue);
+  font-weight: 800;
+}
+
+.chess-blue {
+  color: var(--Blue);
+  font-weight: 800;
+}
+
+.attribution {
+  font-size: 0.9em;
+  text-align: center;
+  margin-top: 2em;
+}
+
+.attribution a {
+  color: #800;
+}
+
+@media (min-width: 720px) {
+  body {
+    font-size: 1rem;
+  }
+
+  .container {
+    padding: 2em;
+  }
+
+  .push-right {
+    margin-left: 0.2em;
+  }
+
+  .push-right .bold-name {
+    margin-left: 0.2em;
+  }
+
+  .push-image-right {
+    margin-left: 0.8em;
+  }
+
+  .rizky-time {
+    padding-left: 0.2em;
+  }
+
+  #chess-image {
+    margin-left: auto;
+  }
+}
